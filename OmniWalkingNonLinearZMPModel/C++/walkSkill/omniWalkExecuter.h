@@ -1,0 +1,48 @@
+/*
+ * omniWalkExecuter.h
+ *
+ *  Created on: Sep 23, 2013
+ *      Author: hamidreza
+ */
+#include <stepGenerator.h>
+#include<iostream>
+#include<cmath>
+#include <vector>
+
+
+#ifndef OMNIWALKEXECUTER_H_
+#define OMNIWALKEXECUTER_H_
+
+#define 	RIGHTFOOT 	-1
+#define 	LEFTFOOT 	1
+
+class omniWalkExecuter {
+
+public:
+
+	omniWalkExecuter();
+	omniWalkExecuter(float stepTime,float DSP,int supportFoot,float dt,float legExtention,float height);
+	void setWalkParam(float stepTime,float DSP,int supportFoot,float dt,float legExtention,float height);
+	void setCurrentSteps(Vector3f Torso,Vector3f LFoot,Vector3f RFoot);
+	virtual ~omniWalkExecuter();
+	static	omniWalkExecuter* getInstance();
+	static	omniWalkExecuter* getInstance(float stepTime,float DSP,int supportFoot,float dt,float legExtention,float height);
+	static omniWalkExecuter* uniqueInstance;
+	void walk(float vx,float vy,float vtheta);
+	void plotSteps();
+
+	void comZ(vector<double> & z,vector<double> & ddz,int n);
+
+	stepGenerator* stepGen;
+	float stepTime;
+	float DSP;
+	int supportFoot;
+	vector<walkStep> steps;
+	walkStep currentSteps;
+	int nSteps;
+	float dt;
+	float legExtention;
+	float height;
+};
+
+#endif /* OMNIWALKEXECUTER_H_ */
