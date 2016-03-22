@@ -1,4 +1,4 @@
-It is a matlab code for a "ZMP-Based biped walking gate pattern generator"  by using the method proposed in [1] and also explained in [2].  
+It is a matlab code for a "ZMP-Based biped walking gate pattern generator"  by using the method proposed in [1] and also explained in details [2]. This method models the desired ZMP trajectory with fourier series and subsequently the fourier model is used to solve the linear inverted pendulum dynamic equation to drive CoM trajectory.
 
 To run the programm, excute the run.m file. 
 

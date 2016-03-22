@@ -1,4 +1,4 @@
-It is C++ code for a "ZMP-Based biped walking gate pattern generator" by using the method proposed in [1].  
+It is C++ code for a "ZMP-Based biped walking gate pattern generator" by using the method proposed in [1]. This method models the desired ZMP trajectory with splines and subsequently the spline model is used to solve the linear inverted pendulum dynamic equation to drive CoM trajectory.  
 
 To run the programm, excute the run.m file. In run.m file You can set a desired direction for walking, and the program will generate appropriate footsteps, ZMP trajectories and CoM trajectory.
 

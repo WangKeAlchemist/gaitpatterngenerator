@@ -1,9 +1,8 @@
 /*
  * comGenerator.h
-
  *
- *  Created on: Sep 23, 2013
- *      Author: hamidreza
+ *
+ *      Author: Abbas
  */
 
 #include <vector>

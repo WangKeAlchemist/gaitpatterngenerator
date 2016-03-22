@@ -1,4 +1,4 @@
-It is a matlab code for a "ZMP-Based biped walking gate pattern generator"  by using the method proposed in [1] and [2].  
+It is a matlab code for a "ZMP-Based biped walking gate pattern generator"  by using the method proposed in [1] and [2]. This method explicity consider the Z trajectory of the CoM and given the desired ZMP trajectory it can solve the  nonlinear dynamic equation of the CoM using resolution methods. Please see [1] for details.
 
 To run the program, first compile the code with command "make". After that an executable binary "walkagent" will be created. Please open the main.cpp file to see the start point. You can set a desired direction for walking, and the program will generate appropriate footsteps, ZMP trajectories and CoM trajectory.
 

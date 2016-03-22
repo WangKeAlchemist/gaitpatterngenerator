@@ -21,7 +21,7 @@ public:
 	comGenerator();
 	virtual ~comGenerator();
 
-	void analyticalCoMGen(double dt,walkStep step,Vector3f zmp,double t);
+	Vector3f splineCoM(walkStep step,float t);
 
 	double ux;
 	double uy;

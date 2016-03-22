@@ -1,8 +1,7 @@
 /*
  * omniWalkExecuter.cpp
  *
- *  Created on: Sep 23, 2013
- *      Author: hamidreza
+ *      Author: Abbas
  */
 
 #include "omniWalkExecuter.h"

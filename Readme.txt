@@ -1,9 +1,10 @@
-This package contains matlab implementations and C++ implementations of 4 different biped center of mass(CoM) pattern generators for a given set of desired foot steps. These methods all are based on inverted pendulum model and ZMP stability criteria and has been proposed in [1],[2],[3],[4] and [5].
+This package contains matlab implementations and C++ implementations of 4 different biped center of mass(CoM) pattern generators for a given set of desired foot steps. These methods all are based on inverted pendulum model and ZMP stability criteria. These methods are proposed in [1],[2],[3],[4] and [5].
 
-I have also tested all but the method in [1], in simulation and on real robot (NaO) for omnidirectional walking. Please see following videos:
+I have tested all but the method in [1], in simulation and on real robot (NaO) for omnidirectional walking. Please see following videos and paper [2]:
 
 https://www.youtube.com/watch?v=z_0Udxk0VUg and https://www.youtube.com/watch?v=jHTba15b01M .
 
+************* PACKAGE ROAD MAP ************************************
 For implementation of [1], see folder "OmniWalkingFourierZMPModel",
 For implementation of [2] and [3], see folder "OmniWalkingNonLinearZMPModel",
 For implementation of [4], see folder "OmniWalkingPreviewControlZMPModel" and 

@@ -6,10 +6,7 @@
 #include "Geometry.h"
 
 //! Describes a vector of three floats
-/*!
- * \author Hugo Picado (hugopicado@ua.pt)
- * \author Nuno Almeida (nuno.alm@ua.pt)
- */
+
 class Vector3f
 {
     public:

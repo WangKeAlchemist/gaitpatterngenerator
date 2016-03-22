@@ -1,8 +1,6 @@
 /*
  * omniWalkExecuter.h
- *
- *  Created on: Sep 23, 2013
- *      Author: hamidreza
+ *      Author: Abbas
  */
 #include <stepGenerator.h>
 #include<iostream>

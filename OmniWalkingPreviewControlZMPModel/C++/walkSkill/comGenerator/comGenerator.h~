@@ -10,8 +10,9 @@
 #include <Vector3f.h>
 #include <walkStep.h>
 #include <math.h>
-#include <eigen3/Eigen/Dense>
-#include <eigen3/Eigen/Core>
+#include "./eigen3/Eigen/Dense"
+#include "./eigen3/Eigen/Core"
+#include <fstream>
 
 #ifndef COMGENERATOR_H_
 #define COMGENERATOR_H_
@@ -20,12 +21,12 @@ using namespace std;
 
 class comGenerator {
 public:
-	comGenerator();
+	comGenerator(float dt);
 	virtual ~comGenerator();
 	
 	bool load( const char* qtable_definition );
-	void creatMartices();
-	void computeCoM();
+	void computeCoM(float stepTime, float dt, std::vector<double> zmpx,std::vector<double> zmpy,std::vector<double> time,vector<double> & CoMX,vector<double> & CoMY);
+	void creatMatrices();
 
 	double Tc;
 	
